@@ -1,0 +1,48 @@
+.InputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.InputDiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: yellow;
+    margin-bottom: .7rem;   
+    
+}
+
+.Label {
+    text-transform: capitalize;
+    align-self: flex-start;
+    margin-left: 4.8rem;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+.InputMargin {
+    margin: .5rem;
+    border: none;
+    height: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem;
+    width: 70%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: rgb(173, 169, 169);
+
+
+}
+.InputMargin:focus{
+    color: #fff;
+    background-color: rgba(101, 122, 185, 0.993)
+}
+

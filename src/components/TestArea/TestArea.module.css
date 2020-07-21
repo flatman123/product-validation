@@ -1,0 +1,18 @@
+.TestAreaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.TextAreaBox{
+    display: flex;
+}
+.Label {
+    text-transform: capitalize;
+}
+
+.TaInput {
+    margin-bottom: .5rem;
+    outline: none;
+    border: none;
+}

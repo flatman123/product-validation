@@ -1,0 +1,17 @@
+.InputDivContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.checkMargin{
+
+}
+
+.CheckLabel{
+    text-transform: capitalize;
+}
+
+.CheckInput{
+    
+}
