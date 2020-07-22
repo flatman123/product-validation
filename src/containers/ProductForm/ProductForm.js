@@ -38,8 +38,8 @@ class ProductForm extends React.Component {
                     placeHolder: 'quantify'
                 },
                 value: '',
-                cols: '50',
-                rows: '5',
+                cols: '20',
+                rows: '3',
                 minLength: '50',
                 minHeigth: '50'
             },
@@ -49,8 +49,8 @@ class ProductForm extends React.Component {
                     placeHolder: 'functionality'
                 },
                 value: '',
-                cols: '5',
-                rows: '4',
+                cols: '20',
+                rows: '3',
                 minLength: '10',
                 minHeigth: '10'
             },
@@ -60,8 +60,8 @@ class ProductForm extends React.Component {
                     placeHolder: 'quality'
                 },
                 value: '',
-                cols: '10',
-                rows: '4',
+                cols: '20',
+                rows: '3',
                 minLength: '10',
                 minHeigth: '10'
             },
@@ -71,8 +71,8 @@ class ProductForm extends React.Component {
                     placeHolder: 'aesthetic'
                 },
                 value: '',
-                cols: '10',
-                rows: '4',
+                cols: '20',
+                rows: '3',
                 minLength: '10',
                 minHeigth: '10'
             },
