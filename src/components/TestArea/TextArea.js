@@ -24,6 +24,7 @@ const textArea = props => {
                         placeholder={type[0]}
                         rows={row}
                         cols={col}
+                        minLength={50}
                         required
                     ></textarea>
                 </div>
