@@ -1,0 +1,23 @@
+
+.SubBtn {
+    border: solid #fff .05rem;
+    height: 5rem;
+    width: 15rem;
+    border-radius: .5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgba(101, 122, 185, 0.993);
+    
+}
+
+.SubBtn:hover{
+    background-color: #fff;
+    color: #657ab9fd;
+    font-weight: 700;
+}
