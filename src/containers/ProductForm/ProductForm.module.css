@@ -1,8 +1,20 @@
 .FieldContainer {
-    width: 95%;
+    width: 80%;
     height: 95%;
-    background-color: teal;
-    position: relative;
+    background-color: #9aa4ec;
     /* left: -5rem; */
+    margin: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.TextAreaContainer {
+    width: 100%;
+    background-color: rgb(12, 184, 69);
+    margin: 3rem;
+    display: flex;
+
+    justify-content: space-evenly;
 
 }
