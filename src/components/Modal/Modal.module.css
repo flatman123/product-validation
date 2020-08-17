@@ -1,0 +1,56 @@
+.Modal {
+    width: 20rem;
+    height: 15rem;
+    background-color: #eee;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    animation: modal-animate .3s ease-in;
+    position: fixed;
+    top: 15vw;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalX {
+    position: relative;
+    bottom: 5rem;
+}
+
+.modalX::after{
+    content:'X';
+    color: rgb(92, 86, 86);
+    cursor: pointer;
+    /* opacity: 0; */
+    font-size: 1.5rem;
+}
+
+
+/* .Modal, .modalX:hover::after{
+    opacity: 1;
+    transition: opacity .2s ease-in;
+} */
+
+@keyframes modal-animate {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes x-appear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
