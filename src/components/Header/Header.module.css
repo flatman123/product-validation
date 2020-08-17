@@ -1,0 +1,30 @@
+.Header {
+
+}
+
+.Ulbody {
+    display: flex;
+    
+}
+
+
+.NavLi {
+    list-style: none;
+}
+
+.NavLi:not(:first-child){
+    margin-left: 1rem;
+
+}
+
+.NavLi:not(:last-child){
+    margin-left: -1rem;
+
+}
+
+.NavAtag {
+    color: #fff; 
+    text-transform: uppercase;  
+    font-size: 2rem; 
+
+}
