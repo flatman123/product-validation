@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+
+}
+
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
 
 
 html, body {
@@ -7,7 +20,8 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: lightcoral;
+  background-image: linear-gradient(to right bottom,
+      #210a72, #f53163 );
  
 }
 
@@ -17,11 +31,12 @@ code {
 }
 
 #root{
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
-  display: flex;
+  position: relative;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* background-color: red; */
 }
 
