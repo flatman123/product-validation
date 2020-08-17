@@ -2,38 +2,42 @@ import React from 'react'
 import classes from './TestArea.module.css';
 
 const textArea = props => {
-    let elements = props.elements.map((type,i) => {
-        if (type[1].elementConfig.type === 'textArea') {
-            let [elType, ph, col, row, vl, min, max] = [ 
-                        type[1].elementConfig.type,
-                        type[1].elementConfig.placeHolder,
-                        type[1].cols,
-                        type[1].rows,
-                        type[1].value,
-                        type[1].minLength,
-                        type[1].minHeigth
+    let [element,elementList] = [
+        null,
+        Object.entries(props.config),
+    ];
+    if (!props.elementsAreActive) {
+        element = elementList.map((el, index)=>{
+            let [elType, ph] = [
+                el[1].elementConfig.type,
+                el[1].elementConfig.placeHolder
             ];
-            console.log(min)
-            return (
-                <div key={vl + i} className={classes.TextAreaBox}>
-                    <label className={classes.CheckLabel}
-                            htmlFor={elType}>{ph}</label>
-                    <textarea
-                        className={classes.TaInput}                     
-                        type={elType}                        
-                        placeholder={type[0]}
-                        rows={row}
-                        cols={col}
-                        minLength={50}
-                        required
-                    ></textarea>
-                </div>
-                )                                  
+            switch(elType){
+                case 'textArea':
+                    return (
+                        <div className={classes.LabelTa}key={ph}>
+                            <label className={classes.CheckLabel}
+                                >{ph}</label>
+                            <textarea
+                                className={classes.TaInput}
+                                onChange={props.inputChanged}
+                                placeholder={ph}
+                                cols={el[1].cols}
+                                rows={el[1].rows}
+                                required
+                            ></textarea>
+                        </div>
+                    )    
+                break;
+                default:
+                    return null;
         }})
+    };
     return (
-        <div className={classes.TestAreaContainer}>
-            {elements}
-        </div>        
+        <div className={classes.TextAreaBox}>
+            {element}
+        </div>
+      
     )};
 
 export default textArea;

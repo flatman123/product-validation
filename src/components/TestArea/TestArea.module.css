@@ -1,29 +1,40 @@
-.TestAreaContainer {
-    width: 100%;
-    height: 20%;
-    background-color: rgb(184, 166, 12);
-    margin-top: 1.5rem;
+.TaArea {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
+    background-color: yellow;
+    justify-self: flex-start;
+    flex-direction: column;
+    align-self: center;
+    margin: 1rem;
 }
+
+
+
+/* TEXTAREA */
+
 
 .TextAreaBox{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .CheckLabel {
-    text-transform: capitalize;
+    text-transform: uppercase;
     align-self: center;
     /* margin-left: 4.8rem; */
     font-family: 'Epilogue', sans-serif;
     font-size: 1.1rem;
+    display: inline-block
+}
+
+.LabelTa{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .TaInput {
-    margin-bottom: .5rem;
+    margin: .5rem;
     outline: none;
     border: none;
     resize: none;
@@ -32,5 +43,17 @@
     font-size: 1.3rem;
     text-transform: capitalize;
     color: rgb(173, 169, 169);
+    justify-self: center;
 
 }
+
+.TaInput:focus{
+    color: #fff;
+    background-color: rgba(101, 122, 185, 0.993);
+    font-size: 1.15rem;
+    border: solid #fff;
+    width: 296px;
+    height: 96px;
+}
+
+
