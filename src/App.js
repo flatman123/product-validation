@@ -8,7 +8,6 @@ const App = () => {
             <React.Fragment>
                  <div className={classes.App}>
                     <Header />
-                    <ProductForm />                    
                 </div>    
             </React.Fragment>
    
