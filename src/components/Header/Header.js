@@ -1,11 +1,15 @@
 import React from 'react';
-import { BrowserRouter, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
 import classes from './Header.module.css';
+import ProductInfo from '../../containers/ProductInfo/ProductInfo';
+import ProductForm from '../../containers/ProductForm/ProductForm';
+
+
 
 const header = () => {
-    return (
-        <header>
-            <BrowserRouter>
+    return (  
+        <>      
+        <header>            
                 <nav>
                     <ul className={classes.Ulbody}>
                         <li className={classes.NavLi}>
@@ -15,16 +19,20 @@ const header = () => {
                         </li>
 
                         <li className={classes.NavLi}>
-                            <NavLink to='/page-2' className={classes.NavAtag}>
+                            <NavLink to='/pg2' className={classes.NavAtag}>
                                 PAGE 2
                             </NavLink>
                         </li>
 
                     </ul>
                 </nav>
-            </BrowserRouter>
-
         </header>
+        <Switch>
+            <Route path='/pg2' component={ProductInfo} />
+            <Route path='/' exact component={ProductForm} />
+        </Switch>
+
+        </>
     )
 }
 
